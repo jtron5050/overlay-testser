@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { PopoverModule } from './popover/popover.module';
 
 @NgModule({
   declarations: [
@@ -10,6 +12,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    PopoverModule,
     AppRoutingModule
   ],
   providers: [],
